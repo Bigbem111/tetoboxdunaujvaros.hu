@@ -45,12 +45,38 @@ export default function TetoboxDunaujvarosWebsite() {
     },
   ];
 
+  const gallery = [
+    '/galeria-1.jpg',
+    '/galeria-2.jpg',
+    '/galeria-3.jpg',
+    '/galeria-4.jpg',
+  ];
+
+  const references = [
+    {
+      name: 'K. Péter',
+      text: 'Csak szuper dolgokat tudnék leírni az üzletről és a kiszolgálásról is. Korrekt, gyors és segítőkész ügyintézés.',
+    },
+    {
+      name: 'T. Zsombor',
+      text: 'Korrekt, segítőkész kiszolgálás. Több éve ide járunk, meg vagyunk elégedve.',
+    },
+    {
+      name: 'G. Szabolcs',
+      text: 'Korrekt, pontos ügyintézés, barátságos kiszolgálás.',
+    },
+  ];
+
+  const benefits = [
+    ['🛡️', 'Biztonságos', 'Tetőboxaink kiváló minőségű anyagokból készülnek.'],
+    ['👌', 'Könnyű használat', 'Egyszerű rögzítés és használat az utazás előtt.'],
+    ['🧳', 'Nagy tárolókapacitás', 'Több hely a bőröndöknek és sportfelszereléseknek.'],
+    ['🚗', 'Minden autóhoz', 'Segítünk kiválasztani a megfelelő rögzítést.'],
+  ];
+
   return (
     <main className="min-h-screen bg-white text-zinc-900">
-      <section
-        id="fooldal"
-        className="relative min-h-[760px] overflow-hidden text-white md:min-h-[860px]"
-      >
+      <section id="fooldal" className="relative min-h-[620px] overflow-hidden text-white md:min-h-[700px]">
         <img
           src="/tengerparti-hero.png"
           alt="Autó tetőboxszal tengerparton"
@@ -58,141 +84,129 @@ export default function TetoboxDunaujvarosWebsite() {
         />
         <div className="absolute inset-0 bg-black/35" />
 
-        <section className="relative z-10 bg-zinc-950/80 text-white">
-          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-3 text-sm font-semibold md:flex-row">
-            <p>Tetőbox bérlés Dunaújvárosban és környékén</p>
-            <a href={`tel:${phoneHref}`} className="text-lg font-black tracking-wide text-white">
-              Hívjon: {phoneDisplay}
-            </a>
+        <section className="relative z-10 bg-[#052b55] text-white">
+          <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 text-sm font-semibold">
+            <a href={`tel:${phoneHref}`} className="font-black">☎ {phoneDisplay}</a>
           </div>
         </section>
 
-        <header className="relative z-10 bg-transparent">
-          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-5 px-4 py-8 md:flex-row">
-            <a href="#fooldal" className="text-center md:text-left">
-              <p className="text-3xl font-black uppercase tracking-tight text-white">Tetőbox bérlés</p>
-              <p className="text-xl font-bold text-white">Dunaújváros</p>
+        <header className="relative z-10 bg-white text-[#063f83] shadow-sm">
+          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-5 py-5 md:flex-row">
+            <a href="#fooldal" className="text-center text-2xl font-black uppercase md:text-left">
+              tetoboxdunaujvaros.hu
             </a>
 
-            <nav className="flex flex-wrap justify-center gap-8 text-sm font-black uppercase text-white">
-              <a href="#fooldal" className="border-b-2 border-white pb-2 hover:border-b-2 hover:border-white">Főoldal</a>
-              <a href="#tetoboxok-es-arak" className="pb-2 hover:border-b-2 hover:border-white">Tetőboxok és árak</a>
-              <a href="#kiegeszito-berles" className="pb-2 hover:border-b-2 hover:border-white">Kiegészítő bérlés</a>
-              <a href="#kapcsolat" className="pb-2 hover:border-b-2 hover:border-white">Kapcsolat</a>
+            <nav className="flex flex-wrap justify-center gap-7 text-sm font-black uppercase text-zinc-900">
+              <a href="#fooldal" className="border-b-2 border-[#063f83] pb-2 text-[#063f83]">Főoldal</a>
+              <a href="#tetoboxok-es-arak" className="pb-2 hover:text-[#063f83]">Tetőboxok és árak</a>
+              <a href="#kiegeszito-berles" className="pb-2 hover:text-[#063f83]">Kiegészítő bérlés</a>
+              <a href="#galeria" className="pb-2 hover:text-[#063f83]">Galéria</a>
+              <a href="#kapcsolat" className="pb-2 hover:text-[#063f83]">Kapcsolat</a>
             </nav>
           </div>
         </header>
 
-        <div className="relative z-10 mx-auto max-w-6xl px-4 pt-20 md:pt-32">
+        <div className="relative z-10 mx-auto max-w-7xl px-5 pt-16 md:pt-24">
           <div className="max-w-2xl">
             <h1 className="text-5xl font-black uppercase leading-tight tracking-tight md:text-7xl">
               Tetőbox bérlés Dunaújvárosban
             </h1>
-            <p className="mt-10 text-3xl font-black leading-tight md:text-4xl">
+            <p className="mt-8 text-2xl font-black uppercase leading-tight md:text-3xl">
               Hívjon: {phoneDisplay}
             </p>
-            <p className="mt-6 max-w-xl text-xl font-semibold leading-8 text-white/90">
-              Tetőbox, tetőcsomagtartó és kerékpárszállító bérlés utazáshoz, nyaraláshoz és síeléshez.
-            </p>
-
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <a href={`tel:${phoneHref}`} className="rounded bg-sky-700 px-8 py-4 text-center text-lg font-black uppercase text-white hover:bg-sky-800">
-                Telefonos foglalás
-              </a>
-              <a href="#tetoboxok-es-arak" className="rounded border-2 border-white px-8 py-4 text-center text-lg font-black uppercase text-white hover:bg-white hover:text-zinc-900">
-                Árak megtekintése
-              </a>
-            </div>
+            <a href={`tel:${phoneHref}`} className="mt-6 inline-block rounded bg-[#063f83] px-10 py-4 text-center text-lg font-black uppercase text-white hover:bg-[#052f63]">
+              Ajánlatkérés
+            </a>
           </div>
         </div>
       </section>
 
-      <section className="bg-sky-700 text-white">
-        <div className="mx-auto grid max-w-6xl gap-4 px-4 py-6 text-center font-black uppercase md:grid-cols-3">
-          <p>✓ Tetőbox bérlés</p>
-          <p>✓ Tetőcsomagtartó bérlés</p>
-          <p>✓ Kerékpárszállító bérlés</p>
-        </div>
-      </section>
-
-      <section id="tetoboxok-es-arak" className="mx-auto max-w-6xl px-4 py-16">
-        <div className="mb-10 text-center">
-          <h2 className="text-4xl font-black uppercase text-sky-800 md:text-5xl">Tetőboxok és árak</h2>
-          <div className="mx-auto mt-3 h-1 w-20 bg-sky-700" />
-          <p className="mx-auto mt-5 max-w-3xl text-lg text-zinc-600">
+      <section id="tetoboxok-es-arak" className="mx-auto max-w-6xl px-4 py-12">
+        <div className="mb-8 text-center">
+          <h2 className="text-4xl font-black uppercase text-[#063f83]">Tetőboxok</h2>
+          <div className="mx-auto mt-2 h-1 w-16 bg-[#063f83]" />
+          <p className="mx-auto mt-4 max-w-3xl text-base text-zinc-700">
             Válassz méretet az utazáshoz. Ha nem vagy biztos benne, telefonon segítünk kiválasztani a megfelelő tetőboxot.
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-7 md:grid-cols-3">
           {roofBoxes.map((box) => (
             <article key={box.name} className="rounded border border-zinc-200 bg-white p-6 text-center shadow-sm">
-              <h3 className="text-2xl font-black uppercase text-sky-800">{box.name}</h3>
+              <h3 className="text-xl font-black uppercase text-[#063f83]">{box.name}</h3>
               <p className="mt-2 font-bold text-zinc-700">Méret: {box.size}</p>
-              <div className="mt-6 flex h-40 items-center justify-center">
+              <div className="mt-5 flex h-36 items-center justify-center">
                 <img src={box.image} alt={box.name} className="max-h-full w-full object-contain" />
               </div>
-              <p className="mt-4 min-h-[72px] leading-7 text-zinc-600">{box.description}</p>
-
-              <div className="mt-6">
-                <p className="text-3xl font-black text-sky-800">{box.price}</p>
-                <p className="mt-2 font-bold text-zinc-600">{box.min}</p>
-              </div>
-
-              <a href={`tel:${phoneHref}`} className="mt-6 block rounded bg-yellow-300 px-5 py-4 text-center font-black uppercase text-zinc-900 hover:bg-yellow-400">
-                Érdeklődés
-              </a>
+              <p className="mt-4 min-h-[68px] text-sm leading-6 text-zinc-600">{box.description}</p>
+              <p className="mt-5 text-2xl font-black text-[#063f83]">{box.price}</p>
+              <p className="mt-1 text-sm font-bold text-zinc-600">{box.min}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section id="kiegeszito-berles" className="bg-zinc-100 py-16">
-        <div className="mx-auto max-w-6xl px-4">
-          <div className="mb-10 text-center">
-            <h2 className="text-4xl font-black uppercase text-sky-800 md:text-5xl">Kiegészítő bérlés</h2>
-            <div className="mx-auto mt-3 h-1 w-20 bg-sky-700" />
-            <p className="mx-auto mt-5 max-w-3xl text-lg text-zinc-600">
-              A tetőbox önmagában nem minden autóra szerelhető fel. Szükség esetén tetőcsomagtartó vagy kerékpárszállító is bérelhető.
-            </p>
-          </div>
+      <section id="kiegeszito-berles" className="mx-auto max-w-6xl px-4 pb-12">
+        <div className="mb-8 text-center">
+          <h2 className="text-4xl font-black uppercase text-[#063f83]">Kiegészítő bérlés</h2>
+          <div className="mx-auto mt-2 h-1 w-16 bg-[#063f83]" />
+        </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            {extras.map((item) => (
-              <article key={item.title} className="grid overflow-hidden rounded border border-zinc-200 bg-white shadow-md md:grid-cols-2">
-                <div className="flex min-h-[270px] items-center justify-center bg-white p-6">
-                  <img src={item.image} alt={item.title} className="max-h-[230px] w-full object-contain" />
-                </div>
-                <div className="flex flex-col justify-center p-6">
-                  <h3 className="text-2xl font-black uppercase text-sky-800">{item.title}</h3>
-                  <p className="mt-4 leading-7 text-zinc-600">{item.text}</p>
-                  <p className="mt-6 text-3xl font-black text-sky-800">{item.price}</p>
-                  <p className="mt-2 text-sm font-semibold text-zinc-500">Az ár a gépjármű típusától és a felszereléstől függően változhat.</p>
-                  <a href={`tel:${phoneHref}`} className="mt-6 inline-block rounded bg-sky-700 px-6 py-3 text-center font-black uppercase text-white hover:bg-sky-800">
-                    Telefonos egyeztetés
-                  </a>
-                </div>
-              </article>
-            ))}
-          </div>
+        <div className="grid gap-7 md:grid-cols-2">
+          {extras.map((item) => (
+            <article key={item.title} className="grid items-center gap-5 rounded border border-zinc-200 bg-white p-6 shadow-sm md:grid-cols-[1fr_1.1fr]">
+              <div className="flex h-48 items-center justify-center">
+                <img src={item.image} alt={item.title} className="max-h-full w-full object-contain" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-black uppercase leading-tight text-[#063f83]">{item.title}</h3>
+                <p className="mt-4 text-sm leading-6 text-zinc-700">{item.text}</p>
+                <p className="mt-5 text-2xl font-black text-[#063f83]">{item.price}</p>
+                <p className="mt-2 text-xs font-semibold leading-5 text-zinc-500">Az ár a gépjármű típusától és a felszereléstől függően változhat.</p>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-14">
-        <div className="mb-10 text-center">
-          <h2 className="text-4xl font-black uppercase">Bérlés menete</h2>
+      <section id="galeria" className="mx-auto max-w-7xl border-t border-zinc-200 px-5 py-12">
+        <div className="text-center">
+          <h2 className="text-4xl font-black uppercase text-sky-700">Galéria</h2>
         </div>
+        <div className="mt-10 grid gap-6 md:grid-cols-4">
+          {gallery.map((image, index) => (
+            <div key={image} className="flex h-44 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100">
+              <img src={image} alt={`Galéria kép ${index + 1}`} className="h-full w-full object-cover" />
+            </div>
+          ))}
+        </div>
+      </section>
 
+      <section id="referenciak" className="mx-auto max-w-7xl border-t border-zinc-200 px-5 py-12">
+        <div className="text-center">
+          <h2 className="text-4xl font-black uppercase text-sky-700">Referenciák</h2>
+        </div>
+        <div className="mt-10 grid gap-7 md:grid-cols-3">
+          {references.map((item) => (
+            <article key={item.name} className="rounded border border-zinc-200 bg-white p-7 text-center shadow-sm">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-sky-700 text-3xl text-sky-700">♙</div>
+              <p className="mt-5 min-h-[120px] text-sm leading-6 text-zinc-700">“{item.text}”</p>
+              <div className="mt-4 text-yellow-400">★★★★★</div>
+              <p className="mt-2 font-black text-sky-700">{item.name}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl border-t border-zinc-200 px-5 py-10">
         <div className="grid gap-6 md:grid-cols-4">
-          {[
-            ['1', 'Telefonos egyeztetés'],
-            ['2', 'Autótípus ellenőrzése'],
-            ['3', 'Átvétel Dunaújvárosban'],
-            ['4', 'Visszahozatal utazás után'],
-          ].map(([number, text]) => (
-            <div key={number} className="rounded border bg-white p-6 text-center shadow-sm">
-              <p className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-sky-700 text-2xl font-black text-white">{number}</p>
-              <p className="mt-4 font-black uppercase">{text}</p>
+          {benefits.map(([icon, title, text]) => (
+            <div key={title} className="grid grid-cols-[48px_1fr] gap-4">
+              <div className="text-4xl text-sky-700">{icon}</div>
+              <div>
+                <h3 className="font-black uppercase text-[#063f83]">{title}</h3>
+                <p className="mt-2 text-sm leading-6 text-zinc-600">{text}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -205,14 +219,12 @@ export default function TetoboxDunaujvarosWebsite() {
             <p className="mt-5 text-lg leading-8 text-zinc-300">
               Foglalás és időpontegyeztetés telefonon vagy emailben. Írd meg az autód típusát, évjáratát és az utazás időpontját.
             </p>
-
             <div className="mt-8 space-y-4 text-xl font-bold">
               <p>Telefon: <a href={`tel:${phoneHref}`} className="text-yellow-300">{phoneDisplay}</a></p>
               <p>Email: <a href={`mailto:${email}`} className="text-yellow-300">{email}</a></p>
               <p>Helyszín: Dunaújváros</p>
             </div>
           </div>
-
           <div className="rounded bg-white p-6 text-zinc-900">
             <h3 className="text-2xl font-black uppercase">Gyors üzenet minta</h3>
             <p className="mt-4 leading-7 text-zinc-700">
