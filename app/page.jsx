@@ -76,54 +76,67 @@ export default function TetoboxDunaujvarosWebsite() {
 
   return (
     <main className="min-h-screen bg-white text-zinc-900">
-      <section id="fooldal" className="relative min-h-[620px] overflow-hidden text-white md:min-h-[700px]">
+      <section id="fooldal" className="relative min-h-[760px] overflow-hidden text-white md:min-h-[860px]">
         <img
           src="/tengerparti-hero.png"
           alt="Autó tetőboxszal tengerparton"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-black/45" />
 
-        <section className="relative z-10 bg-[#052b55] text-white">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 text-sm font-semibold">
-            <a href={`tel:${phoneHref}`} className="font-black">☎ {phoneDisplay}</a>
+        <section className="relative z-10 bg-zinc-950/85 text-white">
+          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-5 py-3 text-sm font-semibold md:flex-row">
+            <p>Tetőbox bérlés Dunaújvárosban és környékén</p>
+            <a href={`tel:${phoneHref}`} className="text-2xl font-black tracking-wide text-white">
+              Hívjon: {phoneDisplay}
+            </a>
           </div>
         </section>
 
-        <header className="relative z-10 bg-white text-[#063f83] shadow-sm">
-          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-5 py-5 md:flex-row">
-            <a href="#fooldal" className="text-center text-2xl font-black uppercase md:text-left">
-              tetoboxdunaujvaros.hu
+        <header className="relative z-10 bg-transparent">
+          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-5 py-10 md:flex-row">
+            <a href="#fooldal" className="text-center md:text-left">
+              <p className="text-3xl font-black uppercase tracking-tight text-white md:text-4xl">Tetőbox bérlés</p>
+              <p className="text-xl font-black text-white md:text-2xl">Dunaújváros</p>
             </a>
 
-            <nav className="flex flex-wrap justify-center gap-7 text-sm font-black uppercase text-zinc-900">
-              <a href="#fooldal" className="border-b-2 border-[#063f83] pb-2 text-[#063f83]">Főoldal</a>
-              <a href="#tetoboxok-es-arak" className="pb-2 hover:text-[#063f83]">Tetőboxok és árak</a>
-              <a href="#kiegeszito-berles" className="pb-2 hover:text-[#063f83]">Kiegészítő bérlés</a>
-              <a href="#galeria" className="pb-2 hover:text-[#063f83]">Galéria</a>
-              <a href="#kapcsolat" className="pb-2 hover:text-[#063f83]">Kapcsolat</a>
+            <nav className="flex flex-wrap justify-center gap-8 text-sm font-black uppercase text-white md:text-base">
+              <a href="#fooldal" className="border-b-2 border-white pb-2">Főoldal</a>
+              <a href="#tetoboxok-es-arak" className="pb-2 hover:border-b-2 hover:border-white">Tetőboxok és árak</a>
+              <a href="#kiegeszito-berles" className="pb-2 hover:border-b-2 hover:border-white">Kiegészítő bérlés</a>
+              <a href="#galeria" className="pb-2 hover:border-b-2 hover:border-white">Galéria</a>
+              <a href="#kapcsolat" className="pb-2 hover:border-b-2 hover:border-white">Kapcsolat</a>
             </nav>
           </div>
         </header>
 
-        <div className="relative z-10 mx-auto max-w-7xl px-5 pt-16 md:pt-24">
-          <div className="max-w-2xl">
-            <h1 className="text-5xl font-black uppercase leading-tight tracking-tight md:text-7xl">
+        <div className="relative z-10 mx-auto max-w-7xl px-5 pt-28 md:pt-36">
+          <div className="max-w-4xl">
+            <h1 className="text-5xl font-black uppercase leading-tight tracking-tight drop-shadow-xl md:text-7xl lg:text-8xl">
               Tetőbox bérlés Dunaújvárosban
             </h1>
-            <p className="mt-8 text-2xl font-black uppercase leading-tight md:text-3xl">
+            <p className="mt-10 text-3xl font-black leading-tight drop-shadow-lg md:text-5xl">
               Hívjon: {phoneDisplay}
             </p>
-            <a href={`tel:${phoneHref}`} className="mt-6 inline-block rounded bg-[#063f83] px-10 py-4 text-center text-lg font-black uppercase text-white hover:bg-[#052f63]">
-              Ajánlatkérés
-            </a>
+            <p className="mt-8 max-w-3xl text-xl font-bold leading-9 text-white drop-shadow md:text-2xl">
+              Tetőbox, tetőcsomagtartó és kerékpárszállító bérlés utazáshoz, nyaraláshoz és síeléshez.
+            </p>
+
+            <div className="mt-10 flex flex-col gap-5 sm:flex-row">
+              <a href={`tel:${phoneHref}`} className="rounded bg-sky-700 px-10 py-5 text-center text-lg font-black uppercase text-white shadow-lg hover:bg-sky-800">
+                Telefonos foglalás
+              </a>
+              <a href="#tetoboxok-es-arak" className="rounded border-2 border-white px-10 py-5 text-center text-lg font-black uppercase text-white shadow-lg hover:bg-white hover:text-zinc-900">
+                Árak megtekintése
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="tetoboxok-es-arak" className="mx-auto max-w-6xl px-4 py-12">
         <div className="mb-8 text-center">
-          <h2 className="text-4xl font-black uppercase text-[#063f83]">Tetőboxok</h2>
+          <h2 className="text-4xl font-black uppercase text-[#063f83]">Tetőboxok és árak</h2>
           <div className="mx-auto mt-2 h-1 w-16 bg-[#063f83]" />
           <p className="mx-auto mt-4 max-w-3xl text-base text-zinc-700">
             Válassz méretet az utazáshoz. Ha nem vagy biztos benne, telefonon segítünk kiválasztani a megfelelő tetőboxot.
