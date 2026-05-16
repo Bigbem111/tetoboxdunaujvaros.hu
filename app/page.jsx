@@ -54,15 +54,15 @@ export default function TetoboxDunaujvarosWebsite() {
 
   const references = [
     {
-      name: 'K. Péter',
-      text: 'Csak szuper dolgokat tudnék leírni az üzletről és a kiszolgálásról is. Korrekt, gyors és segítőkész ügyintézés.',
+      name: 'N. Krisztián',
+      text: 'Rendkívül korrekt és segítőkész Kálmán! A foglalás gyors és egyszerű volt, az átvételnél mindenről részletes tájékoztatást kaptunk. A bérelt felszerelés hibátlan állapotban volt, az egész nyaralás sokkal kényelmesebb volt. Biztosan innen fogunk újra bérelni!',
     },
     {
-      name: 'T. Zsombor',
+      name: 'J. István',
       text: 'Korrekt, segítőkész kiszolgálás. Több éve ide járunk, meg vagyunk elégedve.',
     },
     {
-      name: 'G. Szabolcs',
+      name: 'B. Péter',
       text: 'Korrekt, pontos ügyintézés, barátságos kiszolgálás.',
     },
   ];
