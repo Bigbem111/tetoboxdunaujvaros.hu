@@ -10,13 +10,13 @@ export default function Home() {
       name: 'Tetőbox L',
       size: '450L',
       ideal: 'Családi nyaralásokhoz',
-      price: '3 990 Ft / nap',
+      price: '2 990 Ft / nap',
     },
     {
       name: 'Tetőbox XL',
       size: '600L',
       ideal: 'Síeléshez és hosszú utakhoz',
-      price: '4 990 Ft / nap',
+      price: '2 990 Ft / nap',
     },
   ];
 
@@ -191,7 +191,7 @@ export default function Home() {
             <h3 className="mt-4 text-4xl font-bold">Foglalj egyszerűen</h3>
             <div className="mt-8 space-y-4 text-lg text-gray-700">
               <p>📍 Dunaújváros</p>
-              <p>📞 +36 30 123 4567</p>
+              <p>📞 +36 70 401 4662</p>
               <p>✉️ info@tetobox24.hu</p>
             </div>
           </div>
