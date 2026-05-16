@@ -3,8 +3,6 @@ export default function TetoboxDunaujvarosWebsite() {
   const phoneHref = '+36704014662';
   const email = 'info@tetoboxdunaujvaros.hu';
 
-  const menu = ['Főoldal', 'Tetőboxok és árak', 'Tetőcsomagtartó', 'Kerékpárszállító', 'Kapcsolat'];
-
   const roofBoxes = [
     {
       name: 'M méretű tetőbox',
@@ -35,35 +33,22 @@ export default function TetoboxDunaujvarosWebsite() {
   const extras = [
     {
       title: 'Tetőcsomagtartó bérlés',
-      image: '/tetocsomagtarto.jpg',
+      image: '/Wingbar-evo.jpg',
       text: 'Ha nincs saját keresztrúd az autón, a tetőboxhoz tetőcsomagtartó is bérelhető. Autótípus alapján egyeztetjük a kompatibilitást.',
       price: '1 500 Ft / nap-tól',
     },
     {
       title: 'Kerékpárszállító bérlés',
-      image: '/kerekparszallito.jpg',
+      image: '/Kerékpárszállító.jpg',
       text: 'Kerékpárok szállításához tetőre vagy vonóhorogra szerelhető megoldások, előzetes egyeztetés alapján.',
       price: '2 000 Ft / nap-tól',
     },
   ];
 
-  const getAnchor = (item) =>
-    `#${item
-      .toLowerCase()
-      .replaceAll(' ', '-')
-      .replaceAll('ő', 'o')
-      .replaceAll('á', 'a')
-      .replaceAll('é', 'e')
-      .replaceAll('í', 'i')
-      .replaceAll('ű', 'u')
-      .replaceAll('ú', 'u')
-      .replaceAll('ó', 'o')}`;
-
   return (
     <main className="min-h-screen bg-white text-zinc-900">
-      {/* Hero */}
       <section
-        id="főoldal"
+        id="fooldal"
         className="relative min-h-[760px] overflow-hidden text-white md:min-h-[860px]"
       >
         <img
@@ -73,7 +58,6 @@ export default function TetoboxDunaujvarosWebsite() {
         />
         <div className="absolute inset-0 bg-black/35" />
 
-        {/* Top bar */}
         <section className="relative z-10 bg-zinc-950/80 text-white">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-3 text-sm font-semibold md:flex-row">
             <p>Tetőbox bérlés Dunaújvárosban és környékén</p>
@@ -83,24 +67,18 @@ export default function TetoboxDunaujvarosWebsite() {
           </div>
         </section>
 
-        {/* Header */}
         <header className="relative z-10 bg-transparent">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-5 px-4 py-8 md:flex-row">
-            <a href="#" className="text-center md:text-left">
+            <a href="#fooldal" className="text-center md:text-left">
               <p className="text-3xl font-black uppercase tracking-tight text-white">Tetőbox bérlés</p>
               <p className="text-xl font-bold text-white">Dunaújváros</p>
             </a>
 
             <nav className="flex flex-wrap justify-center gap-8 text-sm font-black uppercase text-white">
-              {menu.map((item, index) => (
-                <a
-                  key={item}
-                  href={getAnchor(item)}
-                  className={`pb-2 hover:border-b-2 hover:border-white ${index === 0 ? 'border-b-2 border-white' : ''}`}
-                >
-                  {item}
-                </a>
-              ))}
+              <a href="#fooldal" className="border-b-2 border-white pb-2 hover:border-b-2 hover:border-white">Főoldal</a>
+              <a href="#tetoboxok-es-arak" className="pb-2 hover:border-b-2 hover:border-white">Tetőboxok és árak</a>
+              <a href="#kiegeszito-berles" className="pb-2 hover:border-b-2 hover:border-white">Kiegészítő bérlés</a>
+              <a href="#kapcsolat" className="pb-2 hover:border-b-2 hover:border-white">Kapcsolat</a>
             </nav>
           </div>
         </header>
@@ -121,7 +99,7 @@ export default function TetoboxDunaujvarosWebsite() {
               <a href={`tel:${phoneHref}`} className="rounded bg-sky-700 px-8 py-4 text-center text-lg font-black uppercase text-white hover:bg-sky-800">
                 Telefonos foglalás
               </a>
-              <a href="#tetőboxok-és-árak" className="rounded border-2 border-white px-8 py-4 text-center text-lg font-black uppercase text-white hover:bg-white hover:text-zinc-900">
+              <a href="#tetoboxok-es-arak" className="rounded border-2 border-white px-8 py-4 text-center text-lg font-black uppercase text-white hover:bg-white hover:text-zinc-900">
                 Árak megtekintése
               </a>
             </div>
@@ -129,7 +107,6 @@ export default function TetoboxDunaujvarosWebsite() {
         </div>
       </section>
 
-      {/* Info strip */}
       <section className="bg-sky-700 text-white">
         <div className="mx-auto grid max-w-6xl gap-4 px-4 py-6 text-center font-black uppercase md:grid-cols-3">
           <p>✓ Tetőbox bérlés</p>
@@ -138,8 +115,7 @@ export default function TetoboxDunaujvarosWebsite() {
         </div>
       </section>
 
-      {/* Roof boxes */}
-      <section id="tetőboxok-és-árak" className="mx-auto max-w-6xl px-4 py-16">
+      <section id="tetoboxok-es-arak" className="mx-auto max-w-6xl px-4 py-16">
         <div className="mb-10 text-center">
           <h2 className="text-4xl font-black uppercase text-sky-800 md:text-5xl">Tetőboxok és árak</h2>
           <div className="mx-auto mt-3 h-1 w-20 bg-sky-700" />
@@ -171,25 +147,28 @@ export default function TetoboxDunaujvarosWebsite() {
         </div>
       </section>
 
-      {/* Extras */}
-      <section id="tetőcsomagtartó" className="bg-zinc-100 py-14">
+      <section id="kiegeszito-berles" className="bg-zinc-100 py-16">
         <div className="mx-auto max-w-6xl px-4">
           <div className="mb-10 text-center">
-            <h2 className="text-4xl font-black uppercase">Kiegészítő bérlés</h2>
-            <p className="mx-auto mt-4 max-w-3xl text-lg text-zinc-600">
+            <h2 className="text-4xl font-black uppercase text-sky-800 md:text-5xl">Kiegészítő bérlés</h2>
+            <div className="mx-auto mt-3 h-1 w-20 bg-sky-700" />
+            <p className="mx-auto mt-5 max-w-3xl text-lg text-zinc-600">
               A tetőbox önmagában nem minden autóra szerelhető fel. Szükség esetén tetőcsomagtartó vagy kerékpárszállító is bérelhető.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
             {extras.map((item) => (
-              <article key={item.title} className="grid overflow-hidden rounded border bg-white shadow-md md:grid-cols-2">
-                <img src={item.image} alt={item.title} className="h-full min-h-[260px] w-full bg-zinc-200 object-cover" />
-                <div className="p-6">
+              <article key={item.title} className="grid overflow-hidden rounded border border-zinc-200 bg-white shadow-md md:grid-cols-2">
+                <div className="flex min-h-[270px] items-center justify-center bg-white p-6">
+                  <img src={item.image} alt={item.title} className="max-h-[230px] w-full object-contain" />
+                </div>
+                <div className="flex flex-col justify-center p-6">
                   <h3 className="text-2xl font-black uppercase text-sky-800">{item.title}</h3>
                   <p className="mt-4 leading-7 text-zinc-600">{item.text}</p>
-                  <p className="mt-6 text-3xl font-black">{item.price}</p>
-                  <a href={`tel:${phoneHref}`} className="mt-6 inline-block rounded bg-sky-700 px-6 py-3 font-black uppercase text-white hover:bg-sky-800">
+                  <p className="mt-6 text-3xl font-black text-sky-800">{item.price}</p>
+                  <p className="mt-2 text-sm font-semibold text-zinc-500">Az ár a gépjármű típusától és a felszereléstől függően változhat.</p>
+                  <a href={`tel:${phoneHref}`} className="mt-6 inline-block rounded bg-sky-700 px-6 py-3 text-center font-black uppercase text-white hover:bg-sky-800">
                     Telefonos egyeztetés
                   </a>
                 </div>
@@ -199,7 +178,6 @@ export default function TetoboxDunaujvarosWebsite() {
         </div>
       </section>
 
-      {/* How it works */}
       <section className="mx-auto max-w-6xl px-4 py-14">
         <div className="mb-10 text-center">
           <h2 className="text-4xl font-black uppercase">Bérlés menete</h2>
@@ -220,7 +198,6 @@ export default function TetoboxDunaujvarosWebsite() {
         </div>
       </section>
 
-      {/* Contact */}
       <section id="kapcsolat" className="bg-zinc-900 py-14 text-white">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2">
           <div>
