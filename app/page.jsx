@@ -10,7 +10,7 @@ export default function TetoboxDunaujvarosWebsite() {
       size: 'Kb. 300–350 liter',
       description: 'Kisebb családoknak, rövidebb utakhoz, hétvégi kiránduláshoz.',
       price: '2 000 Ft / nap-tól',
-      min: 'Minimum bérleti díj: 7 000 Ft',
+      min: 'Minimum bérleti díj: 8 000 Ft',
     },
     {
       name: 'L méretű tetőbox',
@@ -18,7 +18,7 @@ export default function TetoboxDunaujvarosWebsite() {
       size: 'Kb. 400 liter',
       description: 'Családi nyaraláshoz, hosszabb utakhoz, síeléshez.',
       price: '2 000 Ft / nap-tól',
-      min: 'Minimum bérleti díj: 7 000 Ft',
+      min: 'Minimum bérleti díj: 8 000 Ft',
     },
     {
       name: 'XL méretű tetőbox',
