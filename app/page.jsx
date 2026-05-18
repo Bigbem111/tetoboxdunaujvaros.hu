@@ -344,8 +344,17 @@ export default function TetoboxDunaujvarosWebsite() {
         </div>
       </section>
 
-      <footer className="bg-black px-4 py-6 text-center text-sm font-semibold text-zinc-400">
-        © 2026 tetoboxdunaujvaros.hu — Tetőbox bérlés Dunaújváros
+      <footer className="bg-black px-4 py-8 text-center text-sm font-semibold text-zinc-400">
+        <div className="mx-auto max-w-7xl px-5">
+          <p>© 2026 tetoboxdunaujvaros.hu — Tetőbox bérlés Dunaújváros</p>
+          <div className="mt-4 flex flex-wrap justify-center gap-5 text-zinc-300">
+            <a href="/aszf" className="hover:text-white">ÁSZF</a>
+            <a href="/adatkezeles" className="hover:text-white">Adatkezelés</a>
+            <a href="/cookie" className="hover:text-white">Cookie szabályzat</a>
+            <a href="/berleti-szerzodes" className="hover:text-white">Bérleti szerződés minta</a>
+            <a href="/atadas-atvetel" className="hover:text-white">Átadás-átvételi lap</a>
+          </div>
+        </div>
       </footer>
     </main>
   );
