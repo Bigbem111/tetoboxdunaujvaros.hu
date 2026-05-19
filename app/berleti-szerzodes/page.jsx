@@ -5,88 +5,63 @@ export default function Page() {
         <div className="mx-auto max-w-5xl">
           <a href="/" className="text-sm font-bold uppercase text-sky-300">← Vissza a főoldalra</a>
           <h1 className="mt-6 text-4xl font-black uppercase md:text-5xl">Bérleti Szerződés Minta</h1>
-          <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-300">Nyomtatható és később kitölthető szerződésminta.</p>
         </div>
       </section>
-
       <section className="mx-auto max-w-5xl space-y-6 px-5 py-12">
-        <div className="rounded border border-yellow-200 bg-yellow-50 p-5 text-sm font-semibold leading-7 text-yellow-900">
-          A [KAPCSOS ZÁRÓJELBEN] szereplő adatokat a vállalkozás létrehozása után kell kitölteni.
-          Ez egy előkészített, szerkeszthető munkaváltozat.
-        </div>
+        
+<div className="rounded border border-zinc-200 bg-white p-7 shadow-sm">
+  <h2 className="text-2xl font-black uppercase text-[#063f83]">Szolgáltató adatai</h2>
+  <p className="mt-5 leading-8 text-zinc-700">
+    NAGY KÁLMÁN e.v.<br />
+    Székhely: [SZÉKHELY KÉSŐBB KITÖLTENDŐ]<br />
+    Adószám: 92064137-1-27<br />
+    Nyilvántartási szám: 62326636<br />
+    Telefon: +36 70 401 4662<br />
+    E-mail: info@tetoboxdunaujvaros.hu<br />
+    Weboldal: https://tetoboxdunaujvaros.hu
+  </p>
+</div>
 
-        <section className="rounded border border-zinc-200 bg-white p-7 shadow-sm">
-          <h2 className="text-2xl font-black uppercase text-[#063f83]">1. Bérbeadó</h2>
-          <ul className="mt-5 list-disc space-y-3 pl-6 text-base leading-7 text-zinc-700">
-              <li>Vállalkozás neve: [VÁLLALKOZÁS NEVE]</li>
-              <li>Székhely: [SZÉKHELY]</li>
-              <li>Adószám: [ADÓSZÁM]</li>
-              <li>Nyilvántartási szám: [NYILVÁNTARTÁSI SZÁM]</li>
-              <li>Telefonszám: +36 70 401 4662</li>
-              <li>E-mail: info@tetoboxdunaujvaros.hu</li>
-              <li>Weboldal: https://tetoboxdunaujvaros.hu</li>
-          </ul>
-        </section>
-
-        <section className="rounded border border-zinc-200 bg-white p-7 shadow-sm">
-          <h2 className="text-2xl font-black uppercase text-[#063f83]">2. Bérbevevő adatai</h2>
-          <ul className="mt-5 list-disc space-y-3 pl-6 text-base leading-7 text-zinc-700">
-              <li>Név: ______________________________</li>
-              <li>Lakcím: ____________________________</li>
-              <li>Telefonszám: _______________________</li>
-              <li>Személyi igazolvány száma: __________</li>
-              <li>Rendszám: __________________________</li>
-              <li>Autó típusa: ________________________</li>
-          </ul>
-        </section>
-
-        <section className="rounded border border-zinc-200 bg-white p-7 shadow-sm">
-          <h2 className="text-2xl font-black uppercase text-[#063f83]">3. Bérelhető eszközök</h2>
-          <ul className="mt-5 list-disc space-y-3 pl-6 text-base leading-7 text-zinc-700">
-              <li>S méretű tetőbox</li>
-              <li>L méretű tetőbox</li>
-              <li>XL méretű tetőbox</li>
-              <li>Tetőcsomagtartó</li>
-              <li>Kerékpárszállító</li>
-          </ul>
-        </section>
-
-        <section className="rounded border border-zinc-200 bg-white p-7 shadow-sm">
-          <h2 className="text-2xl font-black uppercase text-[#063f83]">4. Bérleti adatok</h2>
-          <ul className="mt-5 list-disc space-y-3 pl-6 text-base leading-7 text-zinc-700">
-              <li>Bérlés kezdete: ____________________</li>
-              <li>Bérlés vége: _______________________</li>
-              <li>Fizetendő bérleti díj: ______________</li>
-              <li>Kaució: ____________________________</li>
-              <li>Fizetési mód: készpénz / utalás / Revolut</li>
-          </ul>
-        </section>
-
-        <section className="rounded border border-zinc-200 bg-white p-7 shadow-sm">
-          <h2 className="text-2xl font-black uppercase text-[#063f83]">5. Állapot és tartozékok</h2>
-          <ul className="mt-5 list-disc space-y-3 pl-6 text-base leading-7 text-zinc-700">
-              <li>Az eszköz átadáskor sérülésmentes / kisebb használati karcokkal rendelkezik / egyéb: ____________________</li>
-              <li>Átadott kulcsok száma: ______ db</li>
-              <li>Átadott rögzítőelemek / szerszámok: ____________________</li>
-          </ul>
-        </section>
-
-        <section className="rounded border border-zinc-200 bg-white p-7 shadow-sm">
-          <h2 className="text-2xl font-black uppercase text-[#063f83]">6. Felelősség</h2>
-          <ul className="mt-5 list-disc space-y-3 pl-6 text-base leading-7 text-zinc-700">
-              <li>A bérlő a bérleti idő alatt teljes felelősséggel tartozik az eszközért.</li>
-              <li>A bérlő köteles az eszközt rendeltetésszerűen használni és sérülésmentesen visszaadni.</li>
-          </ul>
-        </section>
-
-        <section className="rounded border border-zinc-200 bg-white p-7 shadow-sm">
-          <h2 className="text-2xl font-black uppercase text-[#063f83]">7. Aláírás</h2>
-          <ul className="mt-5 list-disc space-y-3 pl-6 text-base leading-7 text-zinc-700">
-              <li>Kelt: Dunaújváros, ____ év ____ hó ____ nap</li>
-              <li>Bérbeadó aláírása: ____________________</li>
-              <li>Bérbevevő aláírása: ____________________</li>
-          </ul>
-        </section>
+<div className="rounded border border-zinc-200 bg-white p-7 shadow-sm">
+  <h2 className="text-2xl font-black uppercase text-[#063f83]">Bérbevevő adatai</h2>
+  <p className="mt-5 leading-8 text-zinc-700">
+    Név: ______________________________<br />
+    Lakcím: ____________________________<br />
+    Telefonszám: _______________________<br />
+    Személyi igazolvány száma: __________<br />
+    Lakcímkártya száma: ________________<br />
+    Rendszám: __________________________<br />
+    Autó típusa: ________________________
+  </p>
+</div>
+<div className="rounded border border-zinc-200 bg-white p-7 shadow-sm">
+  <h2 className="text-2xl font-black uppercase text-[#063f83]">Bérleti tárgy</h2>
+  <p className="mt-5 leading-8 text-zinc-700">
+    Thule Touring M tetőbox — 1. db / Thule Touring M tetőbox — 2. db / Thule Touring L tetőbox — 1 db<br />
+    Egyéb: ______________________________
+  </p>
+</div>
+<div className="rounded border border-zinc-200 bg-white p-7 shadow-sm">
+  <h2 className="text-2xl font-black uppercase text-[#063f83]">Díjak és kaució</h2>
+  <p className="mt-5 leading-8 text-zinc-700">
+    Napi díj: __________ Ft / nap<br />
+    Minimum fizetendő bérleti díj: 8 000 Ft<br />
+    Kaució: 30 000 Ft<br />
+    Fizetési mód: készpénz / banki utalás / Revolut<br />
+    Átadás: ______ év ____ hó ____ nap ____ óra ____ perc<br />
+    Visszaadás: ______ év ____ hó ____ nap ____ óra ____ perc
+  </p>
+</div>
+<div className="rounded border border-zinc-200 bg-white p-7 shadow-sm">
+  <h2 className="text-2xl font-black uppercase text-[#063f83]">Felelősség és aláírás</h2>
+  <p className="mt-5 leading-8 text-zinc-700">
+    A bérlő az eszközt rendeltetésszerűen használja, és a bérleti idő alatt teljes felelősséggel tartozik érte.
+    A bérbeadó nem felel a tetőboxban elhelyezett tárgyakban keletkezett károkért.<br /><br />
+    Kelt: Dunaújváros, ______ év ____ hó ____ nap<br />
+    Bérbeadó aláírása: ____________________<br />
+    Bérbevevő aláírása: ____________________
+  </p>
+</div>
 
       </section>
     </main>

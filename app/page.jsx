@@ -347,6 +347,7 @@ export default function TetoboxDunaujvarosWebsite() {
       <footer className="bg-black px-4 py-8 text-center text-sm font-semibold text-zinc-400">
         <div className="mx-auto max-w-7xl px-5">
           <p>© 2026 tetoboxdunaujvaros.hu — Tetőbox bérlés Dunaújváros</p>
+          <p className="mt-2">NAGY KÁLMÁN e.v. | Adószám: 92064137-1-27 | Nyilvántartási szám: 62326636</p>
           <div className="mt-4 flex flex-wrap justify-center gap-5 text-zinc-300">
             <a href="/aszf" className="hover:text-white">ÁSZF</a>
             <a href="/adatkezeles" className="hover:text-white">Adatkezelés</a>
