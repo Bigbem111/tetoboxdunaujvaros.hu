@@ -13,8 +13,10 @@ export const metadata = {
   ],
   icons: {
     icon: '/favicon.ico',
-    apple: '/favicon-180x180.png',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: 'Tetőbox bérlés Dunaújváros',
     description:
