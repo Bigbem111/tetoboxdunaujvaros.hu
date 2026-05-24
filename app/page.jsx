@@ -59,7 +59,7 @@ export default function TetoboxDunaujvarosWebsite() {
     },
     {
       name: 'J. István',
-      text: 'Korrekt, segítőkész kiszolgálás. Több éve ide járunk, meg vagyunk elégedve.',
+      text: 'Korrekt, segítőkész kiszolgálás. Meg vagyunk elégedve.',
     },
     {
       name: 'B. Péter',
