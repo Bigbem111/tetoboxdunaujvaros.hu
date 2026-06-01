@@ -1,0 +1,6 @@
+Aktuális csomag:
+- Google tag beépítve: AW-18171418169
+- Google favicon javítás beépítve
+- bérleti szerződés lecserélve a revizionált verzióra
+- főoldali J. István referencia rövidítve
+- árak frissítési kísérlet beépítve a page.jsx-ben
