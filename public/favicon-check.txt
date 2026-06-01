@@ -1,0 +1,1 @@
+OK: favicon.ico, favicon-96x96.png, icon.png, apple-touch-icon.png

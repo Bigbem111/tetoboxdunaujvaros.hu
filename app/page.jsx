@@ -9,7 +9,7 @@ export default function TetoboxDunaujvarosWebsite() {
       image: '/M-méret.jpg',
       size: 'Kb. 300–350 liter',
       description: 'Kisebb családoknak, rövidebb utakhoz, hétvégi kiránduláshoz.',
-      price: '2 500 Ft / nap-tól',
+      price: '2 000 Ft / nap-tól',
       min: 'Minimum bérleti díj: 8 000 Ft',
     },
     {
@@ -17,7 +17,7 @@ export default function TetoboxDunaujvarosWebsite() {
       image: '/L-méret.jpg',
       size: 'Kb. 400 liter',
       description: 'Családi nyaraláshoz, hosszabb utakhoz, síeléshez.',
-      price: '2 500 Ft / nap-tól',
+      price: '2 000 Ft / nap-tól',
       min: 'Minimum bérleti díj: 8 000 Ft',
     },
     {
@@ -25,7 +25,7 @@ export default function TetoboxDunaujvarosWebsite() {
       image: '/XL-méret.jpg',
       size: 'Kb. 500–600 liter',
       description: 'Nagyobb csomagokhoz, hosszabb külföldi utakhoz, több fő részére.',
-      price: '3 000 Ft / nap-tól',
+      price: '2 500 Ft / nap-tól',
       min: 'Minimum bérleti díj: 9 000 Ft',
     },
   ];
@@ -35,13 +35,13 @@ export default function TetoboxDunaujvarosWebsite() {
       title: 'Tetőcsomagtartó bérlés',
       image: '/Wingbar-evo.jpg',
       text: 'Ha nincs saját keresztrúd az autón, a tetőboxhoz tetőcsomagtartó is bérelhető. Autótípus alapján egyeztetjük a kompatibilitást.',
-      price: '2 000 Ft / nap-tól',
+      price: '1 500 Ft / nap-tól',
     },
     {
       title: 'Kerékpárszállító bérlés',
       image: '/Kerékpárszállító.jpg',
       text: 'Kerékpárok szállításához tetőre vagy vonóhorogra szerelhető megoldások, előzetes egyeztetés alapján.',
-      price: '3 000 Ft / nap-tól',
+      price: '2 000 Ft / nap-tól',
     },
   ];
 
@@ -59,7 +59,7 @@ export default function TetoboxDunaujvarosWebsite() {
     },
     {
       name: 'J. István',
-      text: 'Korrekt, segítőkész kiszolgálás. Meg vagyunk elégedve.',
+      text: 'Korrekt, segítőkész kiszolgálás. Több éve ide járunk, meg vagyunk elégedve.',
     },
     {
       name: 'B. Péter',
