@@ -41,7 +41,7 @@ export default function TetoboxDunaujvarosWebsite() {
       title: 'Kerékpárszállító bérlés',
       image: '/Kerékpárszállító.jpg',
       text: 'Kerékpárok szállításához tetőre vagy vonóhorogra szerelhető megoldások, előzetes egyeztetés alapján.',
-      price: '3 000 Ft / nap-tól',
+      price: '4 000 Ft / nap-tól',
     },
   ];
 
